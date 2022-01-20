@@ -358,3 +358,39 @@
 
 /* Sale Section */
 
+.sale {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  grid-template: 1.25rem;
+}
+
+.sale__text {
+  padding-top: 2.5rem;
+  padding-left: 6.25rem;
+  padding-right: 1.25rem;
+  background-color: var(--main-color);
+  color: white;
+  width: 50%;
+}
+
+.sale__title {
+  font-family: Playfair Display;
+  font-weight: 400;
+  font-size: 2.75rem;
+  line-height: 1.4;
+  letter-spacing: .025em;
+  padding: 0;
+  margin: 0;
+}
+
+.sale__subtext {
+  max-width: 23rem;
+}
+
+.sale__img {
+  display: block;
+  width: 50%;
+}
+
+/* Steps Section */
