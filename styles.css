@@ -1,6 +1,7 @@
 :root {
   /* Variables */
   --main-color: #AE7C78;
+  --main-color-alpha : rgba(174, 124, 120, 0.6);
   --sub-color: #D89999;
   --main-bg-color: white;
   --sub-bg-color: #F7FAFC;
@@ -21,6 +22,17 @@
 
   background-color: var(--main-bg-color);
   color: var(--main-color);
+}
+
+.page__section,
+.page__header {
+  margin-bottom: 5rem;
+}
+
+.page__section {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Default Styles ? */
@@ -102,10 +114,7 @@
 /* Hero Section */
 
 .hero {
-  max-width: 1200px;
-  margin: auto;
-  margin-top: 4.75rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem; /* fix bottom */
   display: flex;
   flex-direction: row;
   gap: 1rem;
@@ -142,12 +151,11 @@
 /* Benefits Section */
 
 .benefits {
-  max-width: 1200px;
-  margin: auto;
   gap: 1.25rem;
   display: grid;
   grid-template-columns: repeat(3, auto);
   justify-items: end;
+  margin-bottom: 5.25rem; /* Fix bottom for PixelPerfect */
 }
 
 .benefits__item {
@@ -187,8 +195,6 @@
 
 .popular {
   max-width: 794px;
-  margin: auto;
-  margin-top: 5rem;
 }
 
 .popular__heading {
@@ -242,20 +248,6 @@
   background-image: url('./images/arrow-right.svg');
 }
 
-/* .slider__controls::before,
-.slider__controls::after {
-  display: block;
-  width: 50px;
-}
-
-.slider__controls::before {
-  content: url('./images/arrow-left.svg');
-}
-
-.slider__controls::after {
-  content: url('./images/arrow-right.svg');
-} */
-
 .bouquet {
   display: flex;
   position: relative;
@@ -300,4 +292,69 @@
   cursor: pointer;
 }
 
-/*  */
+/* Catalog Section */
+
+.catalog {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1.25rem;
+
+  margin-top: -1.75rem; /* Fix for now*/
+}
+
+.catalog__category {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.category__title {
+  font-family: Playfair Display;
+  font-size: 2.25rem;
+  line-height: 3rem;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.02em;
+}
+
+.category__subtext {
+  color: white;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.category {
+  height: 442px;
+  width: 387px;
+  background-color: var(--main-color-alpha);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition-property: background-size, background-color;
+  transition: .3s ease-in-out;
+}
+
+.category:hover,
+.category:focus {
+  background-size: 125%;
+  background-color: var(--main-color);
+}
+
+.category--wedding {
+  background-image: linear-gradient(0deg, var(--main-color-alpha), var(--main-color-alpha)), url('./images/photo-4.jpg');
+}
+
+.category--peonies {
+  background-image: linear-gradient(0deg, var(--main-color-alpha), var(--main-color-alpha)), url('./images/photo-5.jpg');
+}
+
+.category--choice {
+  background-image: linear-gradient(0deg, var(--main-color-alpha), var(--main-color-alpha)), url('./images/photo-6.jpg');
+}
+
+/* Sale Section */
+
