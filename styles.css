@@ -427,3 +427,54 @@
   margin: 0;
   line-height: 1.25rem;
 }
+
+/* Nes Section */
+
+.news {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1.25rem;
+}
+
+.news__heading {
+  margin-top: 4.375rem;
+  margin-bottom: 2.5rem;
+  width: 30rem;
+}
+
+.news__text {
+  width: 24rem;
+  margin-bottom: 2.5rem;
+}
+
+.social__icon {
+  height: 20px;
+  width: 25px;
+  display: inline-block;
+  margin-right: .5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social__icon--instagram {
+  background-image: url('./images/icon-instagram.svg');
+}
+
+.social__icon--facebook {
+  background-image: url('./images/icon-facebook.svg');
+}
+
+.social__icon--twitter {
+  background-image: url('./images/icon-twitter.svg');
+}
+
+.news__col:nth-child(2) {
+  width: 287px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.img__bouquet {
+  width: 100%;
+}
