@@ -75,6 +75,15 @@
   height: auto;
 }
 
+.heading {
+  font-family: Playfair Display;
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 3rem;
+  letter-spacing: .02em;
+  margin: 0;
+}
+
 /* Header Section */
 
 .header {
@@ -198,12 +207,6 @@
 }
 
 .popular__heading {
-  font-family: Playfair Display;
-  font-weight: 700;
-  font-size: 2.25rem;
-  line-height: 3rem;
-  letter-spacing: .02em;
-  margin: 0;
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -312,13 +315,9 @@
 }
 
 .category__title {
-  font-family: Playfair Display;
-  font-size: 2.25rem;
-  line-height: 3rem;
   color: white;
   margin-top: 0;
   margin-bottom: 0.5rem;
-  letter-spacing: 0.02em;
 }
 
 .category__subtext {
@@ -362,14 +361,14 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  grid-template: 1.25rem;
+  gap: 1.25rem;
+  background-color: var(--main-color);
 }
 
 .sale__text {
   padding-top: 2.5rem;
   padding-left: 6.25rem;
   padding-right: 1.25rem;
-  background-color: var(--main-color);
   color: white;
   width: 50%;
 }
@@ -394,3 +393,37 @@
 }
 
 /* Steps Section */
+
+.steps__heading {
+  text-align: center;
+  margin-bottom: 2.25rem;
+}
+
+.steps__list {
+  display: grid;
+  grid-template-columns: repeat(4, 285px);
+  gap: 1.25rem;
+}
+
+.step {
+  text-align: center;
+}
+
+.step__img {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.step__title {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.step__text {
+  margin: 0;
+  line-height: 1.25rem;
+}
