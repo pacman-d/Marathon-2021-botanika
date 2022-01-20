@@ -428,7 +428,7 @@
   line-height: 1.25rem;
 }
 
-/* Nes Section */
+/* News Section */
 
 .news {
   display: grid;
@@ -478,3 +478,5 @@
 .img__bouquet {
   width: 100%;
 }
+
+/* Feedback Section */
