@@ -40,6 +40,12 @@
   border-radius: 40px;
   text-decoration: none;
   display: inline-block;
+  transition: all .3s ease-in-out;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--main-color);
 }
 
 .link {
@@ -138,15 +144,17 @@
 .benefits {
   max-width: 1200px;
   margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   gap: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-items: end;
 }
 
 .benefits__item {
-  width: 33%;
   display: flex;
+  flex-direction: row;
+  justify-content: start;
+  flex-wrap: nowrap;
 }
 
 .benefits__img {
@@ -175,7 +183,7 @@
   max-width: 18rem;
 }
 
-/* Popular Section */
+/* Popular Section-Slider */
 
 .popular {
   max-width: 794px;
@@ -190,12 +198,67 @@
   line-height: 3rem;
   letter-spacing: .02em;
   margin: 0;
-  margin-bottom: 2.75rem;
+  margin-bottom: 2rem;
   text-align: center;
 }
 
+.slider {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  
+}
+
+.slider__controls {
+  height: 3.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.control {
+  border: none;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 55px;
+  height: 1rem;
+  cursor: pointer;
+}
+
+.control:hover {
+  background-size: 105%;
+}
+
+.control__left {
+  background-image: url('./images/arrow-left.svg');
+}
+
+.control__right {
+  background-image: url('./images/arrow-right.svg');
+}
+
+/* .slider__controls::before,
+.slider__controls::after {
+  display: block;
+  width: 50px;
+}
+
+.slider__controls::before {
+  content: url('./images/arrow-left.svg');
+}
+
+.slider__controls::after {
+  content: url('./images/arrow-right.svg');
+} */
+
 .bouquet {
   display: flex;
+  position: relative;
   flex-direction: row;
   justify-content: space-between;
   gap: 1.25rem;
@@ -206,7 +269,7 @@
   font-size: 1.5rem;
   line-height: 1.875;
   margin: 0;
-  margin-top: .5rem;
+  margin-top: 1.25rem;
   margin-bottom: .75rem;
 }
 
@@ -234,4 +297,7 @@
   border: none;
   padding-left: 105px;
   padding-right: 105px;
+  cursor: pointer;
 }
+
+/*  */
